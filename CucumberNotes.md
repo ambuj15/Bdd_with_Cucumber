@@ -467,7 +467,7 @@ To execute using a **Maven Failsafe plugin** include the below configuration in 
     <perCoreThreadCount>false</perCoreThreadCount>
 </configuration>
 ```
-## Parallel Execution using Junit
+## Parallel Execution using TestNg
 
 ### Steps to follow to achieve parallel execution using TestNg**
 
