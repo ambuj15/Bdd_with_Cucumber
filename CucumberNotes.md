@@ -391,7 +391,7 @@ The cucumber tests can be executed in parallel using both **Junit** and **TestNg
 * In Junit the **feature files run in parallel and not the scenarios** in the feature files. Means if there are 10 feature files in a package then all of them will be executed parallely using Junit and all the scenarios in an individual feature file will run on a single thread.
 * Maven surefire or failsafe plugins can be used to execute the runners. 
 
-### Steps to follow to achieve parallel execution using JUnit
+## Steps to follow to achieve parallel execution using JUnit
 
 **1. Surefire Plugin**
 
@@ -467,7 +467,8 @@ To execute using a **Maven Failsafe plugin** include the below configuration in 
     <perCoreThreadCount>false</perCoreThreadCount>
 </configuration>
 ```
-### Steps to follow to achieve parallel execution using TestNg**
+
+## Steps to follow to achieve parallel execution using TestNg**
 
 * Using TestNg you can overcome the limitation of running all the feature files together in parallel which was there in Junit.
 
