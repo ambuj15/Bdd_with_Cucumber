@@ -170,6 +170,11 @@ Following are the different SDLC models:
 
 * The Program Increments (PI's) duration is usually of 8 to 12 weeks which consiststs of 5 working iterations of 2 weeks each and 1 iteration of Innovation and planning
 
+* The pictorial view of PI is depicted below:
+![SafeFlow](https://github.com/ambuj15/MyNotesHub/blob/main/Resources/Images/PI_FLOW.png "Safe Workflow")
+![A simple flow](https://github.com/girirajvyas/101-series/blob/master/resources/images/sdlc/SAFe_Ceremonies.PNG "SAFe ceremonies")
+
+
 
 # Questions and Answers
 
