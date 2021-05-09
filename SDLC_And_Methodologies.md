@@ -251,83 +251,99 @@ Occurs at the end of every iteration where discussion around what went well, wha
 
 # Questions and Answers
 
->**Question 1:** When we should use Waterfall Model?
->
- >**Answer:** 
- >a) When the requirements are clear, well documented and fixed.
- >b) Technology to be used is final.
- >c) The Project is short and ample of resources with required expertise are there 
+```
+**Question 1:** When we should use Waterfall Model?
+ **Answer:** 
+ a) When the requirements are clear, well documented and fixed.
+ b) Technology to be used is final.
+ c) The Project is short and ample of resources with required expertise are there 
  
->**Question 2:** What are different Agile metrics?
->
->**Answer:**
+**Question 2:** What are different Agile metrics?
+**Answer:**
 
->**Question 3:** What you like and dislike about scrum?
->**Answer:** 
->**What I like about scrum is:**
->* It facilitates the product delivery at faster pace.
->* One can see code functioning pretty soon as parts of functionality gets delivered in small chunks as compared to waterfall.
->* Scrum ensures effective use of time and money
->* Large projects are divided into easily manageable sprints
->* Lot of team coordination is there in scrum as developer and testers sit together and small functional issues are resolved at very >faster pace because of good communication between scrum members
->* All round of development of resources happens because developer and testers have idea about each other's work.
->
->**What is that don't like about scrum is:**
->* In case any of the member is non-performing there are high chances of commitment and project failures as each individual is solely >responsible to perform the task but if something fails it's responsibilty comes to the scrum team.
->* Daily meetings could be cumbersome sometimes.
+**Question 3:** What you like and dislike about scrum?
+**Answer:** 
+**What I like about scrum is:**
+* It facilitates the product delivery at faster pace.
+* One can see code functioning pretty soon as parts of functionality gets delivered in small chunks as compared to waterfall.
+* Scrum ensures effective use of time and money
+* Large projects are divided into easily manageable sprints
+* Lot of team coordination is there in scrum as developer and testers sit together and small functional issues are resolved at very faster pace because of good communication between scrum members
+* All round of development of resources happens because developer and testers have idea about each other's work.
 
->**Question 4)** Please describe the way of adaptation of new employees on your project. What is the main steps of this process. How >do you know that candidate is ready for production? Below are the points by which we make the journey of new joinee comfortable.
->
->**Answer**
->1) Explain Who is who, how to use office equipments, who is the right person for the query resolution of each department.
->2) Address any queries or doubts raised on Organization guidelines, norms, culture and unwritten rules.
->3) Sharing insight on how things are done in the organisation.
->4) Introducing the new associate to team members.
->5) Able to expalin work related tasks.
->6) Making aware them about the Org level trainings, portals etc.
->
->In your project:
->1. Ensures his Id is created on the portal.
->2. Ensures we raised all the requests for necessary resources like laptop,headphone etc.
->3. Ensures he gets all the permission to access to the system.
->4. Making aware of the all mandatory trainings of the project.
+**What is that don't like about scrum is:**
+* In case any of the member is non-performing there are high chances of commitment and project failures as each individual is solely responsible to perform the task but if something fails it's responsibilty comes to the scrum team.
+* Daily meetings could be cumbersome sometimes.
 
->**Question 5)** How safe is different from regular agile?
->
->**Answer** In Safe multiple teams are involved who works on different trains but in agile a single team is there and all the
-> planning and everything is centred and focused on that single team.
+**Question 4)** Please describe the way of adaptation of new employees on your project. What is the main steps of this process. How do you know that candidate is ready for production? Below are the points by which we make the journey of new joinee comfortable.
+**Answer**
+1) Explain Who is who, how to use office equipments, who is the right person for the query resolution of each department.
+2) Address any queries or doubts raised on Organization guidelines, norms, culture and unwritten rules.
+3) Sharing insight on how things are done in the organisation.
+4) Introducing the new associate to team members.
+5) Able to expalin work related tasks.
+6) Making aware them about the Org level trainings, portals etc.
 
->**Question 6)** Why the term train is used in Safe? Why not car, plain or scooter?
->
->**Answer** My version : Bcz there is a pre-defined track on which a train with multiple boggies run. Similarly a release train runs >on pre-defined set of tasks and backlogs distributed among multiple boggies/teams.
+In your project:
+1. Ensures his Id is created on the portal.
+2. Ensures we raised all the requests for necessary resources like laptop,headphone etc.
+3. Ensures he gets all the permission to access to the system.
+4. Making aware of the all mandatory trainings of the project.
 
->**Question 7)** What is Inspect and adapt in PI?
->
->**Answer** 
->* The PI is done when its timebox expires. Each PI concludes with a final system demo called a PI System Demo. This is a newsworthy >event that illustrates all the features that have been accomplished during the PI. This is done as part of the I&A event, which is >a regular time to reflect, apply problem-solving techniques, and take on improvement actions needed to increase the velocity, >quality, and reliability of the next PI.
->* The result of the I&A event is a set of improvement features or Stories that can be added to the backlog for the upcoming PI >planning. In this way, every ART improves every PI.
+**Question 5)** How safe is different from regular agile?
+**Answer** In Safe multiple teams are involved who works on different trains but in agile a single team is there and all the
+ planning and everything is centred and focused on that single team.
 
->** Question 8)** What are committed and uncommitted objectives?
->
->**Answer:** The objectives which team will definitely cover in the PI are committed and the uncommitted one's are the one's which 
->team keeps secondary objectives in case there are some impediments on committed one's.
+**Question 6)** Why the term train is used in Safe? Why not car, plain or scooter?
+**Answer** My version : Bcz there is a pre-defined track on which a train with multiple boggies run. Similarly a release train runs on pre-defined set of tasks and backlogs distributed among multiple boggies/teams.
 
->**Question 9)** What is the difference between a feature and an objective?
->
->**Answer:** An objective is given to a team but a feature can be shared between two or more teams and that feature will be part of 
->objectives of both the teams separately.
+**Question 7)** What is Inspect and adapt in PI?
+**Answer** 
+* The PI is done when its timebox expires. Each PI concludes with a final system demo called a PI System Demo. This is a newsworthy event that illustrates all the features that have been accomplished during the PI. This is done as part of the I&A event, which is a regular time to reflect, apply problem-solving techniques, and take on improvement actions needed to increase the velocity, quality, and reliability of the next PI.
+* The result of the I&A event is a set of improvement features or Stories that can be added to the backlog for the upcoming PI planning. In this way, every ART improves every PI.
 
->**Question 10)** What is the difference between a spike and an enabler story? When do we create each?
+** Question 8)** What are committed and uncommitted objectives?
+**Answer:** The objectives which team will definitely cover in the PI are committed and the uncommitted one's are the one's which 
+team keeps secondary objectives in case there are some impediments on committed one's.
 
->**Question 11)** How you estimate your stories? What are the metrices you follow?
+**Question 9)** What is the difference between a feature and an objective?
+**Answer:** An objective is given to a team but a feature can be shared between two or more teams and that feature will be part of 
+objectives of both the teams separately.
 
->**Question 12)** Is it wise to estimate the story on the basis of hours rather than complexity of the functionality?
->
->**Answer: ** I my opinion it is not wise to estimate the story on hourly basis because a particular story can be completed by 
->different individuals in different amount of time based upon their technical skills, speed and experience about the functionality. 
->Hence i would recommend that estimation should happen on the basis of complexity and the amount of work taht needs to be done in a 
->particular story.
+**Question 10)** What is the difference between a spike and an enabler story? When do we create each?
 
->**Question 13)** What is meant by Epic and how it is differnt from Features and stories? Who creates the EPIC?
->
->**Answer:**
+**Question 11)** How you estimate your stories? What are the metrices you follow?
+
+**Question 12)** Is it wise to estimate the story on the basis of hours rather than complexity of the functionality?
+**Answer: ** I my opinion it is not wise to estimate the story on hourly basis because a particular story can be completed by 
+different individuals in different amount of time based upon their technical skills, speed and experience about the functionality. 
+Hence i would recommend that estimation should happen on the basis of complexity and the amount of work taht needs to be done in a 
+particular story.
+
+**Question 13)** What is meant by Epic and how it is differnt from Features and stories? Who creates the EPIC?
+**Answer:**
+
+**Question 14)** What is meant by Metrics? What metrics are used in estimating the story?
+**Answer** Metrics are pre-decided parameters which are used to measure how well an organisation is performing and progressing to 
+achieve its objectives. It is basically defined in order to prevent or identify any deviations from the pre-defined objectives or goals.
+
+I agile estimations are basically done on the basis of following factors:
+1. Amount of Work
+2. Complexity of work
+3. Risks or uncertainities.
+
+
+**Question 15)** If a new functionality is coming for testing purpose and you are completely unaware about it them how will you 
+estimate it?
+**Answer:**
+
+**Question 16)** What is Definition of Ready and definition of done?
+**Answer:** Definition of Ready defines a criteria which a particular user story has to complete before it get's up for estimation or inclusion in sprint.
+
+The Definition of Done is an agreement between Development Team and the Product Owner on what needs to be completed for each user story.
+Essentially, a DoD represents the acceptance criteria for a sprint or release
+```
+
+**Good Reads and questions:**
+* https://github.com/Ashu-hub/All-About-Java/blob/master/MiscTopics.md
+* https://github.com/girirajvyas/101-series
