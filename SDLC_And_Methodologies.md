@@ -252,12 +252,14 @@ Occurs at the end of every iteration where discussion around what went well, wha
 # Questions and Answers
 
 >**Question 1:** When we should use Waterfall Model?
+>
  >**Answer:** 
  >a) When the requirements are clear, well documented and fixed.
  >b) Technology to be used is final.
  >c) The Project is short and ample of resources with required expertise are there 
  
 >**Question 2:** What are different Agile metrics?
+>
 >**Answer:**
 
 >**Question 3:** What you like and dislike about scrum?
@@ -275,7 +277,7 @@ Occurs at the end of every iteration where discussion around what went well, wha
 >* Daily meetings could be cumbersome sometimes.
 
 >**Question 4)** Please describe the way of adaptation of new employees on your project. What is the main steps of this process. How >do you know that candidate is ready for production? Below are the points by which we make the journey of new joinee comfortable.
-
+>
 >**Answer**
 >1) Explain Who is who, how to use office equipments, who is the right person for the query resolution of each department.
 >2) Address any queries or doubts raised on Organization guidelines, norms, culture and unwritten rules.
@@ -291,22 +293,27 @@ Occurs at the end of every iteration where discussion around what went well, wha
 >4. Making aware of the all mandatory trainings of the project.
 
 >**Question 5)** How safe is different from regular agile?
+>
 >**Answer** In Safe multiple teams are involved who works on different trains but in agile a single team is there and all the
 > planning and everything is centred and focused on that single team.
 
 >**Question 6)** Why the term train is used in Safe? Why not car, plain or scooter?
+>
 >**Answer** My version : Bcz there is a pre-defined track on which a train with multiple boggies run. Similarly a release train runs >on pre-defined set of tasks and backlogs distributed among multiple boggies/teams.
 
 >**Question 7)** What is Inspect and adapt in PI?
+>
 >**Answer** 
 >* The PI is done when its timebox expires. Each PI concludes with a final system demo called a PI System Demo. This is a newsworthy >event that illustrates all the features that have been accomplished during the PI. This is done as part of the I&A event, which is >a regular time to reflect, apply problem-solving techniques, and take on improvement actions needed to increase the velocity, >quality, and reliability of the next PI.
 >* The result of the I&A event is a set of improvement features or Stories that can be added to the backlog for the upcoming PI >planning. In this way, every ART improves every PI.
 
 >** Question 8)** What are committed and uncommitted objectives?
+>
 >**Answer:** The objectives which team will definitely cover in the PI are committed and the uncommitted one's are the one's which 
 >team keeps secondary objectives in case there are some impediments on committed one's.
 
 >**Question 9)** What is the difference between a feature and an objective?
+>
 >**Answer:** An objective is given to a team but a feature can be shared between two or more teams and that feature will be part of 
 >objectives of both the teams separately.
 
@@ -315,10 +322,12 @@ Occurs at the end of every iteration where discussion around what went well, wha
 >**Question 11)** How you estimate your stories? What are the metrices you follow?
 
 >**Question 12)** Is it wise to estimate the story on the basis of hours rather than complexity of the functionality?
+>
 >**Answer: ** I my opinion it is not wise to estimate the story on hourly basis because a particular story can be completed by 
 >different individuals in different amount of time based upon their technical skills, speed and experience about the functionality. 
 >Hence i would recommend that estimation should happen on the basis of complexity and the amount of work taht needs to be done in a 
 >particular story.
 
 >**Question 13)** What is meant by Epic and how it is differnt from Features and stories? Who creates the EPIC?
+>
 >**Answer:**
