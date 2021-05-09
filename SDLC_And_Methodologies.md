@@ -88,13 +88,13 @@ Following are the different SDLC models:
 	* Dependency of customer input sometimes acts as a blocker and hence team sits idle.
 	* No or less focus on documentation in agile and hence sometime it is hard to anwer that what and why particular thing is developed.
    
-### Agile Implementation frameworks/principles:
+# Agile Implementation frameworks/principles:
 
 1. **Scrum**
 2. **Kanban**
 3. **Xtreme Programming**
 
-#### 1. Scrum
+## 1. Scrum
 
 * It is an agile implementation framework which works on iterative approach(means iteration or sprint wise) within a small team of 8 to 10 members
 * The team constitutes of :
@@ -117,7 +117,7 @@ Following are the different SDLC models:
 8. Review and retrospective: Sprint Review and Sprint Retrospective
 9. Extension: Backlog refinement and Scrum of Scrums
 
-#### 2. Kanban
+## 2. Kanban
 
 * It is the second and very popular agile implementation framework which has following main points:
  
@@ -135,7 +135,7 @@ Following are the different SDLC models:
 
 * One more interesting thing about kanban board is **LIMIT**. You can set the limit of the tasks that can be taken under To-Do. It's not that whole backlog will fall under To-Do. We can set limit that at a time only specified number of stories or tasks can be accomodated in To-Do section from the backlog and as tasks start moving the stories can be picked from backlog.
  
- ##### Scrum vs Kanban
+ #### Scrum vs Kanban
 
 |Sr. no| Scrum                                              | Kanban                                            |
 |-----:| -------------                                      |:-------------:                                    |
@@ -164,7 +164,7 @@ Following are the different SDLC models:
 
 ## Ceremonies in SAFE.
 
-#### 1. PI (Programme Increment).
+### 1. PI (Programme Increment).
 
 * It's a timebox in which Agile release trains works on the objectives that are planned during the PI planning and delivers the product in the form of working, tested softwares and systems.
 
@@ -174,7 +174,80 @@ Following are the different SDLC models:
 ![SafeFlow](https://github.com/ambuj15/MyNotesHub/blob/main/Resources/Images/PI_FLOW.png "Safe Workflow")
 ![A simple flow](https://github.com/girirajvyas/101-series/blob/master/resources/images/sdlc/SAFe_Ceremonies.PNG "SAFe ceremonies")
 
+### 2. PI Planning.
 
+* It is the most essential part of Safe Agile in which different teams of ART's across the enterprise collects and get alligned to plan the work nfor the upcoming PI.
+
+* It's the heartbeat of Safe and if you are not doing PI planning you are not followin SAFE.
+* It usually occurs for 2 to 3 days in which different activities and ceremonies takes place. The different ceremonies that takes place are
+  * **Business stake holder's presentation** on the grownth and achievements and more information about product, releases and expectations.
+  *  **Breakouts** : In the breakout, teams estimate their capacity for each Iteration and identify the backlog items they will likely need to realize the features. Each team creates their draft plans on the basis of EPIC's received by the stake holder or Product Managers, visible to all, iteration by iteration.
+  * **Draft Plan review :**During the tightly timeboxed draft plan review, teams present key planning outputs, which include capacity and load, draft PI objectives, potential risks, and dependencies. Business Owners, Product Management, and other teams and stakeholders review and provide input.
+  * **Planning Adjustments:** Management presenting any changes to planning scope, people, and resources.
+  * **BraekOut 2:** In this the team extends their previous day's agenda and create or modify existing draft plan as per the review comments received in plan review and planning adjustments.
+  * **Final Plan Review:** This is final review of the draft paln presented by the team after planning adjustments and all.
+  * **Program Risks and Dependencies:** A team shares the risks and dependencies if any to keep the stakeholder's aware that these risks and dependencies can impact their ability to meet the PI objectives.
+  * **Vote of confidence:** At the end VOC happens in which each team member rates their confidence on the sacel of 1 to 5 and the average coming out of the VOC is marked as team's confidence to deliver their objectives.
+  
+  Each team conducts a ‘fist of five’ vote. If the average is three fingers or above, then management should accept the commitment. If it’s less than three, the team reworks the plan. Any person voting two fingers or fewer should be given an opportunity to voice their concerns. This might add to the list of risks, require some re-planning, or simply be informative. Once each team has voted the process is repeated for the entire ART with everyone expressing their confidence in the collective plan.
+  * **Planning Retrospective :** A retrospective happens in which following points and inputs are expected from the teams in different ART's.
+      a) What went Well
+	  b) What didn't went well
+	  c) Area of improvement for next planning.
+
+### 3. Iteration Planning : 
+The feature are taken in PI planning from the epic shared by the product manager and a product backlog is created for the team and for each feature multiple stories are written and groomed by PO. These stories are shared within the team and then the team discussion happens and stories are ellaborated and discussed within the team and then the estimations are done for each story. Then stories are picked by respective team members.
+
+### 4. Iteration Retospectives : 
+Occurs at the end of every iteration where discussion around what went well, what didn't went well and what needs to be improved happens.
+
+
+**Key work items(Epic -> feature -> Story -> Task):**  
+ - https://www.scaledagileframework.com/epic/
+   - https://www.scaledagileframework.com/features-and-capabilities/
+     - https://www.scaledagileframework.com/story/
+
+**Note:**  "Epic has multiple features and is created by Product Manager" and "Features has multiple stories created by PO after discussion with stake holders" and "Story has Multiple tasks"
+
+**Rally Status and Responsible for Action**  
+
+|Sr. no| Status        | Responsible for Action                            |
+|-----:| ------------- |:-------------:                                    |
+|  1   | Unelaborated  | Product Owner writes the first draft                  |
+|  1   | Defined       | After Sprint planning and after each team member agrees it is defined. i.e it can be worked upon                  |
+|  1   | In Progress   | Create tasks on the first day and move to In Progress                  |
+|  1   | Completed     | Mark complete once all tasks are completed and deployed                |
+|  1   | Accepted      | After demo marked as Accepted by the Product owner                  |
+|  1   | Ready to ship | Once feature is released                  |
+
+**Feature Sizing**  
+
+|Sr. no| Size (Tee shirt sizing)   | Story Points (Fibonacci series)     |
+|-----:| -------------             |:-------------:    |
+|  1   | XS                        |    15             |
+|  1   | S                         |    30             |
+|  1   | M                         |    45  (30 + 15)  |
+|  1   | L                         |    75  (45 + 30)  |
+|  1   | XL                        |    120 (75 + 45)  |
+|  1   | 2XL                       |    195 (120 + 75) |
+
+### 2.1 Agile Estimation Techniques:  
+
+ > Estimation is one of the simplest, yet most frightening activities that software professionals face. So much business value depends on it. So much of our reputations ride on it. So much of our angst and failure are caused by it. It is the primary wedge that has been driven between business people and developers. It is the source of nearly all the distrust that rules that relationship.                                                                          - Robert C Martin (Uncle Bob)
+
+ - **Planning Poker** 
+   - All participants use numbered playing cards and estimate the items. 
+   - There are free online tools as well that can be leveraged. 
+   - Voting is done anonymous and discussion is raised when there are large differences. 
+   - Voting is repeated till the whole team reached consensus about the accurate estimation. 
+   - Planning poker works well when you have to estimate a relative small number of items (max 10) in a small team (5-8 people). 
+   - Tip: try to keep the voting between affordable numbers.  Maximize the highest card to 13 points in case of 3 week sprint and to 8 in case of 2 weeks sprint.
+ - **T-shirt Sizes**
+   - This is a perfect technique for estimating a large backlog of relative large items i.e Features
+   - Especially when you have several concurrent scrum teams working on the same product. 
+   - Items are estimated into t-shirt sizes: XS, S, M, L, XL. 
+   - The decision about the size is based on an open and mutual collaborative discussion. 
+   - This method is an informal and quick way to get an rough feeling about the total size of your backlog.
 
 # Questions and Answers
 
@@ -222,3 +295,24 @@ In your project:
 
 **Question 6)** Why the term train is used in Safe? Why not car, plain or scooter?
 **Answer** My version : Bcz there is a pre-defined track on which a train with multiple boggies run. Similarly a release train runs on pre-defined set of tasks and backlogs distributed among multiple boggies/teams.
+
+**Question 7)** What is Inspect and adapt in PI?
+**Answer** 
+* The PI is done when its timebox expires. Each PI concludes with a final system demo called a PI System Demo. This is a newsworthy event that illustrates all the features that have been accomplished during the PI. This is done as part of the I&A event, which is a regular time to reflect, apply problem-solving techniques, and take on improvement actions needed to increase the velocity, quality, and reliability of the next PI.
+* The result of the I&A event is a set of improvement features or Stories that can be added to the backlog for the upcoming PI planning. In this way, every ART improves every PI.
+
+** Question 8)** What are committed and uncommitted objectives?
+**Answer:** The objectives which team will definitely cover in the PI are committed and the uncommitted one's are the one's which team keeps secondary objectives in case there are some impediments on committed one's.
+
+**Question 9)** What is the difference between a feature and an objective?
+**Answer:** An objective is given to a team but a feature can be shared between two or more teams and that feature will be part of objectives of both the teams separately.
+
+**Question 10)** What is the difference between a spike and an enabler story? When do we create each?
+
+**Question 11)** How you estimate your stories? What are the metrices you follow?
+
+**Question 12)** Is it wise to estimate the story on the basis of hours rather than complexity of the functionality?
+**Answer: ** I my opinion it is not wise to estimate the story on hourly basis because a particular story can be completed by different individuals in different amount of time based upon their technical skills, speed and experience about the functionality. Hence i would recommend that estimation should happen on the basis of complexity and the amount of work taht needs to be done in a particular story.
+
+**Question 13)** What is meant by Epic and how it is differnt from Features and stories? Who creates the EPIC?
+**Answer:**
