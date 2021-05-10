@@ -311,8 +311,19 @@ team keeps secondary objectives in case there are some impediments on committed 
 objectives of both the teams separately.
 
 **Question 10)** What is the difference between a spike and an enabler story? When do we create each?
+Answer:
+Spike: Spike is taken when we want to do any POC and it's outcome can be a document or a working code. (SPIKE=POC). There are no story points in SPIKE as it is considered as non-deliverable.
+Enabler: Enabler is taken as a base for any future implementations. It is a deliverable and hence we consider story pointing and task burining under the same.
+
+POC can or cannot be accepted as part of implementation in the project but enabler is surely something that you will definitely use in your project in future.
 
 **Question 11)** How you estimate your stories? What are the metrices you follow?
+Ans:
+Story points are typically a unit of measuring three things, that each work item consists of:
+
+The amount of work to do
+The complexity of the work
+Any risk or uncertainty in doing the work
 
 **Question 12)** Is it wise to estimate the story on the basis of hours rather than complexity of the functionality?
 **Answer: ** I my opinion it is not wise to estimate the story on hourly basis because a particular story can be completed by 
