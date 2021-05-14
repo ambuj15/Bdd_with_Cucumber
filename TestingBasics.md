@@ -55,6 +55,90 @@ This is the layer where business logic is written where we perform logical check
 
 This is the layer where we keep all the set up related thing like if we are creating a page object model with cucumber then all the pages with OR's are kept in this layer and also WebDriver engines, wrappers and reportings, TestRunners, Starters, Classes to read properties.
 
+# Type of Testings or Test Design techniques
+
+## 1. Static Testing:
+
+* No code is executed
+* Done to catch the bugs/defects at the initial stage of development
+* Code Reviews, Design document review, Requirement review, static code analysis are done under static testing.
+* Static testing is about prevention of defects
+* Also called as **Verification testing**
+
+### Static testing techniques:
+
+**Classes of Static Test Design Techniques:**
+
+
+   | Manual              | With Help of Tools                            |
+   | ------------------- |:--------------------------------------:       |
+   |Walk through         |    Analysis of coding standard using compiler |
+   | Informal review     |    Analysis of code metrics                   |
+   | Technical review    |    Analysis of code structure                 |
+   |Inspection           |                                               |
+   | Static code review  |                                               |
+
+**Manual Static test design techniques**
+
+1. **Informal Reviews:** No process is followed, just randomly review the code or documnets and give the comments.
+2. **Technical Reviews:** Peers with technical expertise reviews the code and technical design documents and share the inputs as per the outcome of the discussion. Test Strategy, Test Plan and requirement specification documents are majorly reviewed in this.
+3. **Walkthrough:** Author of the workproduct gives the technical walkthrough of the product.
+4. **Inspection:** It is a formal review done by experts. They follow strict process to find the bugs in requirements and codes. The review is done on the basis of the checklist and defects if found are reported to the concerned team.
+5. **Static code review:** This process involves the source/test code review by team or individuals with technical expertise. **It checks the syntax of the code, coding standards, code optimization, etc.** This is also termed as white box testing.This review can be done at any point during development. 
+
+**Static test design techniques with the help of tool**
+
+1. **Analysis of coding standard using compiler:** In this code standards like naming conventions, syntax, line spacing use of white spaces, alignments etc are validated using the help of compilers like we use some pre-defined formats in Intellij and in Eclipse.
+
+2. **Analysis of code metrics:** It keeps a check on cyclomatic numbers, dept of nesting and number of lines of codes. This information helps to keep a check on the code and prevents it from becoming excessively lengthy, unwieldy, difficult to understand and maintain.
+
+3. **Analysis of Code Structure:**
+An analysis of the code structure gives an idea about the effort required to write or understand the code and to test it using particular tools and techniques
+
+## 2. Dynamic Testing
+
+* Done after source code is completed and is in working state
+* In this code is executed and then functionality is validated and hence also called as Validation testing.
+* As we execute the code and hence it is about finding the defects and not preventing them like in static testing.
+* Dynamic testing is performed at all levels of testing and it can be either black or white box testing.
+
+### Dynamic testing techniques:
+
+1. **Unit Testing**
+2. **Integration Testing**
+3. **System testing**
+
+Dynamic test design techniques can be further classified into:
+* Specification-based (black-box, also known as behavioral techniques)
+* Structure-based (white-box or structural techniques
+* Experience- based
+
+   | Specification-based(Black Box) | Structure-based(White box)  |Experience-Based|
+   | ------------------------- |:--------------------------------------: |--------------|
+   | Boundary Value Analysis   | Statement or Line coverage              |Exploratory Testing|
+   | Equivalance Partitioning  | Condition or predicate coverage         | Fault attack|
+   | Decision Table testing    | Decision or branch coverage             ||
+   | State transition diagram  | Multiple condition coverage             ||
+   | Use Case Testing          |                                         ||
+
+**Important Points to Keep in Mind while Designing Test Cases**
+
+1. **The only way to attain 100% logical coverage is to use the decision test design techniques** --Important Point
+2. Boundary value analysis and equivalence partitioning are the best methods to cover the range of array inputs
+3. Permutations and combinations can be used for field level validations
+
+# KEY DIFFERENCE BETWEEN STATIC AND DYNAMIC TESTING AND DESIGN TECHNIQUES
+* Static testing was done without executing the program whereas Dynamic testing is done by executing the program.
+* Static testing checks the code, requirement documents, and design documents to find errors whereas Dynamic testing checks the functional behavior of software system, memory/CPU usage and overall performance of the system.
+* Static testing is about the prevention of defects whereas Dynamic testing is about finding and fixing the defects.
+* Static testing does the verification process while Dynamic testing does the validation process.
+* Static testing is performed before compilation whereas Dynamic testing is performed after compilation.
+
+**References:**
+
+- [Guru99](https://www.guru99.com/static-dynamic-testing.html#:~:text=Static%20testing%20is%20about%20the,testing%20is%20performed%20after%20compilation.)
+- [Test Design Techniques](https://www.invensis.net/blog/software-test-design-techniques-static-and-dynamic-testing/)
+
 
 ## Advantages Of Api Testing
 
