@@ -1,6 +1,7 @@
 # Questions and Answers
 
 **1.** What is technical debt and what issue it causes in a code?
+
 **Ans** 
 * It's a direct result of a poorly written code.
 * Technical debt is the outcome of any code which is written without following proper coding standards and also the code written needs to be refactored because of various problems in the code.
@@ -13,6 +14,7 @@
 - You can face troubles in scaling/updating the project
 
 **2.** What causes technical debts and what are different types of technical debts?
+
 **Ans**
 
 *_Causes of technical debts are:_**
@@ -33,9 +35,11 @@
 > Sonar and Jacoco are the tools which can be used for code analysis and can help in eliminating technical debts
 
 **3.** What is code quality?
+
 **Ans** It's the desire to create a code that is easy to understand and work with.
 
 **4.** Why you think code quality is important?
+
 **Ans** Code quality is an important factor because the code you write should be understandable by the machine and the colleagues and different people involved or might get involved. If the code is not following proper quality standards then the machine can through an exception but when the humans will try to understand the code they might reach out to you again and again for understanding the code and hence dependency on you would be immense and also it is possible that in future you might not be able to understand the code you wrote yourself and hence code quality is an important factor.
 
 Poor quality code can also result in:
@@ -45,6 +49,7 @@ Poor quality code can also result in:
 - Frustrated end user
 
 **5.** What are different code quality metrics?
+
 **Ans** Different code quality metrics are:
 
 - **Complexity :** How complex your code is to understand.
@@ -59,6 +64,7 @@ eg:- to many comments, Duplicate codes, Lazy classes etc.
 > **Note:** All the above mentioned metrices can be measured using static code analysis tool called as Sonar.
 
 **6.** What is Cyclomatic complexity?
+
 **Ans** It is the quantitative measure of the number of independent linear paths in the code. It measures the complexity of the program.
 
 Ex:  If source code contains no control flow statement then its cyclomatic complexity will be 1 and source code contains a single path in it. Similarly, if the source code contains one if condition then cyclomatic complexity will be 2 because there will be two paths one for true and the other for false.
