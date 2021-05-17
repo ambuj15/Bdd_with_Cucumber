@@ -248,6 +248,30 @@ Occurs at the end of every iteration where discussion around what went well, wha
    - Items are estimated into t-shirt sizes: XS, S, M, L, XL. 
    - The decision about the size is based on an open and mutual collaborative discussion. 
    - This method is an informal and quick way to get an rough feeling about the total size of your backlog.
+   
+ - **Dot Voting**
+   - When you are faced with a relative small set of items and in need of a super simple and effective technique to estimate you can use Dot Voting.
+   - This method has originated form decision making and you can use it for estimating.
+   - Each person gets a small number of small stickers and can choose to vote for the individual items.
+   - The more dots is an indicator of a bigger size.
+   - Works well in both small and large group.
+   - You have to limit the number of estimated items
+
+ - **3 Point Estimation Technique**
+   - In this estimation is done on the basis of 3 factors.
+     - **Optimistic Approach/ Best Case :** No unkowns and end moment surprises
+     - **Pessimistic approach/ Worst case :** Lot of unknowns, uncertainities and dependencies
+     - **Most Likely/ Medium Case :** In this we have a jist of both optimistic and pessimistic approach.
+   - Now the average of all three factors **for each task** is calclulated and confidence is committed on the basis of the average calculated.
+   - The mean is calculated using the formuala:
+     
+     **E = Mean = (O + M + P) / 3** This is the mean calculated for the task.
+   
+   - Standard deviation is also calculated for each task and based on the difference between SD and Mean the confidence is calculated.
+
+    **Standard Deviation (SD) = √ [((O − E)2 + (M − E)2 + (L - E)2)/2]**
+
+
 
 # Questions and Answers
 
