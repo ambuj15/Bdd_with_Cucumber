@@ -491,6 +491,90 @@ public class Ostrich extends Bird{}
    - **The Business logic should not be dependent on the database or dependent on the schema or tables in the database**. It also should not be concerned with whether the systems are backed with Oracle, MySQL, or a File system. These are all elements you can abstract away to keep the architecture as clean as possible.
    - In the example diagram above, the Business logic only depends on the Business Objects and a set of interfaces to communicate with other layers. Hence introducing an abstraction layer between business logic and the detail and hence eliminating Anti-Pattern or hard dependency
 
+# Some other design Principles.
+
+## 1. DRY (Don't repeat yourself)
+
+* Every piece of knowledge or logic must have a single, unambiguous representation within a system.
+* This principle aims at reducing or completely eliminating repetetive codes.
+* To achieve DRY:
+  -  divide your codes into smaller pieces and chunks and try to write the methods/functions for different functionalities and re-use them instead of re-writing them again and again.
+  - Don't write lengthy methods, but divide logic and try to use the existing piece in your method.
+* An example of dry is the utility, helper and wrapper classes we create like some of the methods we have created to identify we elements using X-paths. In those methods we don't write the code driver.findElement(By.xpath) again and again we just call the wrapper method where we want to find the method using Xpath.
+* The concept of state sharing using **PIKO container in cucumber also aims at implementing DRY principles** so that multiple step definition classes can interact with each other and can share common steps among them.
+
+**Benefits**
+* It helps you create a short code which is easy to maintain, re-use, debug and chances of bugs are also reduced.
+* Saves a lot of time because you are not writing same logic again and again.
+* Improves code-readability.
+* Avoid redundant repeated code
+
+## 2. WET (Waste Everyone's time or We enjoy Typing)
+
+* The violation of DRY principle results in WET principle.
+* In this long redundant codes are written and all the principles of DRY are violated.
+
+## 3. KISS (Keep it simple stupid)
+
+* It aims at keeping the code simple short and easy to understand.
+* Keep your methods as small and as simple as possible.
+* **Each method should solve only one problem.** If you have multiple use cases then try to divide them in small chunks so that code becomes simple and easy to understand.
+
+* **In the below code snippet see the second solution is better approach**
+
+```
+public String weekday1(int day) {
+    switch (day) {
+        case 1:
+            return "Monday";
+        case 2:
+            return "Tuesday";
+        case 3:
+            return "Wednesday";
+        case 4:
+            return "Thursday";
+        case 5:
+            return "Friday";
+        case 6:
+            return "Saturday";
+        case 7:
+            return "Sunday";
+        default:
+            throw new InvalidOperationException("day must be in range 1 to 7");
+    }
+}
+
+public String weekday2(int day) {
+    if ((day < 1) || (day > 7)) throw new InvalidOperationException("day must be in range 1 to 7");
+
+    string[] days = {
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+    };
+
+    return days[day - 1];
+}
+```
+* Violation of kiss leads to unncessary investment of time in understanding lengthy and complex code in case you or some other developer needs to work on it.
+* Suppose you have written a code by violating KISS design principle and in future you identified a problem and you or one of your team is assigned to solve this problem. Now, **Can you identify the problem and understand your code and know what it’s actually trying to do?.**
+
+## 4. YAGNI (You ain't gonna need it)
+
+* Under this principle refrain yourself from adding extra code on the basis of anticipation that you might need it in future.
+* You should only implement what is the need of the hour even if you are sure that you’ll need it in the future. You implement only what’s needed at this moment, under the current requirements.
+* Adding code on the basis of anticipation or assumption or surity too that the feature will be introduced in future is not at all recommended and it's a waste of time, effort because who knows, maybe these features that you think you will need it, it will be changed then, or not needed at all.
+* Adding extra features, means adding more code to write, to maintain, to test and debug.
+
+
+> References: 
+* https://dzone.com/articles/software-design-principles-dry-and-kiss#:~:text=The%20DRY%20Principle%3A%20Don't,unambiguous%20representation%20within%20a%20system.%22
+> * https://medium.com/omarelgabrys-blog/object-oriented-analysis-and-design-design-principles-part-6-b78e2b9da023
+> * https://medium.com/@nrk25693/dry-or-wet-and-why-867ac3096483
 # Questions and Answers:
 
 1. Why we should follow solid principles?
@@ -514,6 +598,12 @@ Ans : An application should be developed by keeping in mind 3 major factors:
   - **Architecture:** Chosing the right architecture based on the requirements is the first step in application development. Eg: MVC, WEBAPI, Spring-Boot
   - **Design Principles:** Choosing the right design principles helps in increading code maintainibility, extesibility and readability.
   - **Design Patterns:** We need to chose correct design pattern to build the software.
-
+  
+3. How to achieve KISS?
+Ans: To achieve KISS:
+     
+- Try to write simple code.
+- Think of many solutions and identify the best one out of them.
+- Whenever you find lengthy code, divide that into multiple methods
 
 
