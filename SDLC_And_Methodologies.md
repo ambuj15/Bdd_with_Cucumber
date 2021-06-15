@@ -238,7 +238,7 @@ Occurs at the end of every iteration where discussion around what went well, wha
  - **Planning Poker** 
    - All participants use numbered playing cards and estimate the items. 
    - There are free online tools as well that can be leveraged. 
-   - Voting is done anonymous and discussion is raised when there are large differences. 
+   - Voting is done anonymous and discussion is raised when there are large differences.(To vote you can use 3 point estimation or expert advice) directly thodi kar doge kuch reference to chahie ya technique toh chahie planning poker ke lie bhi so usme yeh bolna hai . 
    - Voting is repeated till the whole team reached consensus about the accurate estimation. 
    - Planning poker works well when you have to estimate a relative small number of items (max 10) in a small team (5-8 people). 
    - Tip: try to keep the voting between affordable numbers.  Maximize the highest card to 13 points in case of 3 week sprint and to 8 in case of 2 weeks sprint.
