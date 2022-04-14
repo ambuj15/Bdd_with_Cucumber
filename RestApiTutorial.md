@@ -1,22 +1,80 @@
 # API Tutorial
 
-**What is API?**
+**What is an API?**
 
 * Api stands for Application Programming Interface.
-* When two independent systems (Client and Server) interacts with each other then the platform which is used is called API.
+* **When two independent systems (Client and Server) interacts with each other then the platform which is used is called API.**
 * Generally, it just means an agreement about how some library or service will work.
-* It need not even be language specific means we can create API's using Java, Python, Ruby, C#.
+* **It need not even be language specific means we can create API's using Java, Python, Ruby, C#.**
 * API interacts between different systems in two languages Json and XML.
+* An API exactly defines the methods for one software program to interact with the other. The system can use Rest or SOAP to interact using the languages like JSON or XML for communication.
+
+> API's can be written in any language because ultimately the communication between client and server will happen in either JSON or XML format.
+
+> Now API is a platform but there must be some set of rules , architectures or protocols that must be followed in order to enable the communication between Client and server these architectures and protocols are defined under RestFul Web Services and SOAP.
 
 **What is web service API**
 
-When the exchange of information between client(Who seek's information) and server(Who provides information) happens over the web using http protocol as a medium and Json or XML as a language then that API is called Web service API.
+When the exchange of information between client(Who seek's information) and server(Who provides information) happens over the web using **http protocol as a medium and Json or XML as a language then that API is called Web service API.**
 
 **Note: Sometime people confuses API as JAR's but they are all together different.**
 
 >API is an Application Programming Interface, a collection of routines to do some specific work. A jar is a file object to encapsulate an API or more.
+### Web API's can be of following types:
+ * **Open API's :** Open APIs, also known as external or public APIs, are available to developers and other users with minimal restrictions. They may require registration, and use of an API key, or may be completely open. They are intended for external users (developers at other companies, for example) to access data or services.
+ * **Internal API's :** In contrast to open APIs, internal APIs are designed to be hidden from external users. They are used within a company to share resources. They allow different teams or sections of a business to consume each other’s tools, data and programs.
+ * **Partner API's :** Partner APIs are technically similar to open APIs, but they feature restricted access, often controlled through a third-party API gateway. They are usually intended for a specific purpose, such as providing access to a paid-for service. This is a very common pattern in software as a service ecosystem. Eg: AIRLINES exposing their API's to MMT and other booking apps.
+ * **Composite API's :** Composite APIs allow developers to access several endpoints in one call. These could be different endpoints of a single API, or they could be multiple services or data sources. Composite APIs are especially useful in microservice architectures, where a user may need information from several services to perform a single task.
 
-## Understanding API, Client Server and HTTP protocol through a live example.
+###Types of Web Services
+
+![Types Of Web Services](https://github.com/ambuj15/MyNotesHub/blob/main/Resources/Images/TypesOfWebServices.png "Types of Web Services")
+
+> **V.Imp.Note :** REST and SOAP are not type of API's they are Architectures or Protocols which API uses or follows to enable communication between client and server.
+### RESTful Webservice or Rest API
+
+* REST stands for **REpresentational State Transfer.**
+* REST is a set of architectural constraints, not a protocol or a standard as in SOAP. API developers can implement REST in a variety of ways.
+* REST is not restricted to XML and its the choice of implementer which Media-Type to use like XML, JSON, Plain-text,HTML, XLT, Python, PHP. Moreover, REST can use SOAP protocol but SOAP cannot use REST.
+* Something else to keep in mind: **Headers and parameters are also important in the HTTP methods of a RESTful API HTTP request,** as they contain important identifier information like metadata, authorization, uniform resource identifier (URI), caching, cookies, and more.
+* Rest follows six important standards:
+   * **Client-server architecture :** A client-server architecture made up of clients, servers, and resources, with requests managed through HTTP.
+   * **Stateless client-server communication :** Meaning no client information is stored between get requests and each request is separate and unconnected.
+   * **Cacheable data :** That streamlines client-server interactions.
+   * **A uniform interface** between components so that information is transferred in a standard form.
+   * **A layered system** that organizes each type of server (those responsible for security, load-balancing, etc.) involved the retrieval of requested information into hierarchies, invisible to the client.
+   * **Code-on-demand (optional):** the ability to send executable code from the server to the client when requested, extending client functionality.>
+  
+> Question : Though rest API has 6 criterias still it is considered easier. Why?
+>
+> Answer : Though the REST API has these criteria to conform to, it is still considered easier to use than a prescribed protocol like SOAP (Simple Object Access Protocol), which has specific requirements like XML messaging, and built-in security and transaction compliance that make it slower and heavier.
+
+
+In contrast, **REST is a set of guidelines that can be implemented as needed, making REST APIs faster and more lightweight, with increased scalablity—perfect for Internet of Things (IoT) and mobile app development.**
+
+### SOAP
+
+* SOAP stands for Simple Object Access Protocol
+* Since SOAP is a protocol, it follows a strict standard to allow communication between the client and the server.
+* Because it is a protocol, it imposes built-in rules that increase its complexity and overhead, which can lead to longer page load times. Hence it is slower than REST
+* SOAP was designed so that applications built with different languages and on different platforms could communicate.
+* SOAP uses only XML for exchanging information in its message format.
+* On the basis of Security, SOAP has SSL( Secure Socket Layer) and WS-security whereas REST has SSL and HTTPS.
+* In the case of Bank Account Password, Card Number, etc. SOAP is preferred over REST.
+
+### Difference between SOAP and REST
+* SOAP stands for Simple Object Access Protocol and REST stands for REpresentational State Transfer.
+* Since SOAP is a protocol, it follows a strict standard to allow communication between the client and the server whereas REST is an architectural style that doesn’t follow any strict standard but follows six constraints defined by Roy Fielding in 2000. Those constraints are – Uniform Interface, Client-Server, Stateless, Cacheable, Layered System, Code on Demand.
+* SOAP uses only XML for exchanging information in its message format whereas REST is not restricted to XML and its the choice of implementer which Media-Type to use like XML, JSON, Plain-text. Moreover, REST can use SOAP protocol but SOAP cannot use REST.
+* On behalf of services interfaces to business logic, SOAP uses @WebService whereas REST instead of using interfaces uses URI like @Path.
+* SOAP is difficult to implement and it requires more bandwidth whereas REST is easy to implement and requires less bandwidth such as smartphones.
+* Benefits of SOAP over REST as SOAP has ACID compliance transaction. Some of the applications require transaction ability which is accepted by SOAP whereas REST lacks in it.
+* On the basis of Security, SOAP has SSL( Secure Socket Layer) and WS-security whereas REST has SSL and HTTPS .In the case of Bank Account Password, Card Number, etc. SOAP is preferred over REST. The security issue is all about your application requirement, you have to build security on your own. It’s about what type of protocol you use.
+
+### Difference Between API and Web Service
+Refer : https://medium.com/@programmerasi/difference-between-api-and-web-service-73c873573c9d#:~:text=An%20API%20generally%20involves%20calling,don't%20involve%20Web%20service.
+
+### Understanding API, Client Server and HTTP protocol through a live example.
 
 To understand the client server analogy we have to come up with few things:
 
@@ -352,5 +410,13 @@ class Student {
    }  
 }
 ```
+
+````
+Questions and Answers:
+
+1 : Why SOAP is preferred for the applications which needs to perform certain transactions?
+
+Answer : Because SOAP has ACID compliance which are must for any transaction to complete smoothly.
+````
 
 >Reference: [Rest Assured Video Tutorial](https://www.youtube.com/watch?v=z3Zty_aX7ZI&list=PL8VbCbavWfeE5aEeEpoXp2xiHi5K_7BMT)
