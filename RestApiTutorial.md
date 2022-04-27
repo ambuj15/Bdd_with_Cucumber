@@ -107,10 +107,15 @@ Some important points about get request are:
 
 * **_POST :_** It is used to send data to the server. It is mostly used when we want to add or update any data to the server. The form fill up is an example of POST request. Some of the key features of POST request are:
 
+
   **a)** Data passed through the POST method is not visible in the browser URL.
+  
   **b)** Additionally, values passed through POST are not stored in browser history.
+  
   **c)** Moreover, there is no restriction on the length of data sent through the POST method.
+  
   **d)** Also, POST method request supports different data types like String, binary, integers, etc.
+  
   **e)** **POST is NOT idempotent** i.e. You will not get the same response again and again if you hit the same POST request.
 
 * **_PUT :_** The Put method is similar to the Post method since it updates the data. The only difference is that we use it when we have to replace an existing entity completely. Also, **PUT methods are idempotent, i.e., they return the same result on executing repeatedly.**
@@ -120,6 +125,15 @@ Some important points about get request are:
 * **_DELETE :_** Like its name, the Delete method deletes the server’s representations of resources through the specific URL. Additionally, just like the Get method, they do not have a request body.
 
 * **_OPTIONS :_** This is not a widely used method when compared to other ones. It returns data specifying the different methods and the operations supported by the server at the given URL. Moreover, it responds with an Allow header giving a list of the HTTP methods allowed for the resource.
+
+> Example : Filling a form. You filled a form using POST request and entered wrong age. Now if you want to change age it can be done in following ways:
+> 
+> a) Using POST : But this will create a new entity again.
+> 
+> b) Using PUT : This can be used where you will pass the whole request again with updated age.
+> 
+>c) Using PATCH : This can directly update the age only without needing to pass whole request.
+> 
 
 **What is the structure of an HTTP Request?
 The next step is to understand how an HTTP request looks like and how it is structured. An HTTP request consists of-
